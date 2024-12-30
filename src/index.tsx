@@ -1,15 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import { styled } from '@linaria/react'
+import { Table } from 'antd'
+
+const TableContiner = styled(Table)`
+  background-color: red;
+`
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+   <div>
+    <TableContiner/>
+   </div>
   </React.StrictMode>
 );
 
